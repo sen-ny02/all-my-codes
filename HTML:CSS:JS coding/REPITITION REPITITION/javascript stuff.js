@@ -28,3 +28,5 @@ function addTwoNumbers(num1, num2) {
   
 const sum = addTwoNumbers(5, 10);
 console.log(sum)
+
+console.log("hello")
