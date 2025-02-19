@@ -1,0 +1,9 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-wrap: balanced;
+}
+p{
+    font-size: 135%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-wrap: balanced;
+}

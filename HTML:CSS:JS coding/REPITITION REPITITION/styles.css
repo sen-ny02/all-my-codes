@@ -1,0 +1,47 @@
+.cool-click-box {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .cool-click-box input[type="checkbox"] {
+    display: none;
+  }
+  
+  .cool-click-box label {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .checkbox-text {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .checkbox-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .cool-click-box input[type="checkbox"]:checked + label .checkbox-icon {
+    transform: translateX(0);
+  }
+  
+  .cool-click-box input[type="checkbox"]:checked + label {
+    color: white;
+  }
+  
+  .cool-click-box label:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
