@@ -64,3 +64,28 @@ function findAverage(array){
 }
 
 console.log(findAverage(myArray2))
+
+console.log("Create a function that receives an array of numbers and returns an array containing only the positive numbers")
+
+// AI's attempt
+function filterPositiveNumbers(array) {
+    return array.filter(number => number > 0);
+}
+
+// My attempt
+let positiveNumbers = []
+function filter(array){
+    for (let i=0; i<array.length; i++){
+        if (array[i]>=0){
+            positiveNumbers.push(array[i])
+        }
+
+    }
+}
+
+let testArray = [-10, 2, -3, 4, -5, 6];
+
+console.log("AI: "+ filterPositiveNumbers(testArray))
+
+filter(testArray)
+console.log("Me: " + positiveNumbers)

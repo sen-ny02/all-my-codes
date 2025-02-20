@@ -1,0 +1,20 @@
+body{
+    margin:0px; /* AI */
+    display: flex; /* AI */
+    justify-content: center; /* AI */
+    align-items:center /* AI */
+}
+
+button {
+    background-color: rgb(219, 248, 248);
+    border: 1px solid lightblue;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.5s; /* AI */
+    cursor: pointer; /* AI */
+    border-radius: 5px; /* AI */
+    border:none /* AI */
+}
+button:hover { /* AI */
+    background-color: skyblue; /* AI */
+}
