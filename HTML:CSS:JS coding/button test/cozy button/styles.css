@@ -1,0 +1,19 @@
+.cozy-button {
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cozy-button:hover {
+    background-color: #ff4a3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
