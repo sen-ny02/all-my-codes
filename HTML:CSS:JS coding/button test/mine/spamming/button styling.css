@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(201, 201, 201, 0.617);
+}
+
+button{ 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: large;
+    transition: background-color 0.5s;
+
+}
+
+button:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer; 
+    color: white;
+}
