@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+// add this section for it to link to youtube homepage
 // button.addEventListener('click', () => {
 //     window.location.href = 'https://www.youtube.com';
 // });
