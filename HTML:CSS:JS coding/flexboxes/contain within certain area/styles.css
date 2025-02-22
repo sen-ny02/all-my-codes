@@ -1,0 +1,84 @@
+/* 
+My code
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    background-color: rgba(134, 227, 250, 0.274)
+}
+
+.fixed-container{
+    height: 2000px;
+    width: 4000px;
+    border: 2px solid;
+}
+
+.flexbot-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.boxes{
+    font-size: 15pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(134, 227, 250);
+    border: none;
+    border-radius: 20px;
+}
+
+*/
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    background-color: rgba(134, 227, 250, 0.274);
+    height: 100vh;
+    margin: 0;
+}
+
+.fixed-container {
+    height: 500px; /* Set the desired height */
+    width: 500px; /* Set the desired width */
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10px; /* Optional: Add gap between boxes */
+}
+
+.boxes {
+    font-size: 15pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(134, 227, 250);
+    border: none;
+    border-radius: 20px;
+}

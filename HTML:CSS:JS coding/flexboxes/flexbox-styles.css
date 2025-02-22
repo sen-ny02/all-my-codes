@@ -1,17 +1,12 @@
 body{
     min-height: 740px;
-    /* border: 5px solid black; */
     display: flex;
     gap: 20px;
-    /* 
-    row-gap: 20px
-    column-gap: 20px
-    */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    /* align-content: space-evenly; */
+    background-color: rgba(174, 215, 251, 0.37);
 }
 
 .box{
@@ -20,8 +15,12 @@ body{
     align-items: center;
     height: 100px;
     width: 100px;
+/* making it look pretty */
     background-color:rgb(174, 215, 251);
     font-size: 20pt;
+    border-radius:25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 /* 
