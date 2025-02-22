@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'UTF-8'>
+        <meta name="viewport" content = "width=device-width"> 
+        <Title>Center items horizontally</Title>
+        <style>
+            .button{
+                background-color: rgb(198, 227, 252);
+                border: none;
+                border-radius: 25px;
+                padding: 30px;
+                font-size: 20px;
+                transition: background-color 0.5s, color 0.3s, transform 0.3s;
+                ;
+            }
+            .button:hover{
+                background-color: #0000ff;
+                color: white;
+                cursor: pointer;
+                transform: translateY(-10px);
+            }
+
+            .button:active{
+                transform: translateY(5px);
+                background-color: #f9b3f9;
+            }
+/* This is the section that makes everything centered horizontally */
+            body{
+                background-color: rgba(132, 132, 132, 0.477);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Title that is going to be centered</h1>
+        <p>This is a paragraph that is going to be centered horizontally.</p>
+        <ul>
+            <li>Hello</li>
+            <li>this</li>
+            <li>is</li>
+            <li>an</li>
+            <li>amazing</li>
+            <li>list</li>
+        </ul>
+        <button>This is a default button</button>
+        <br>
+        <button class = "button">Better button</button>
+        <br><br>
+    </body>
+</html>

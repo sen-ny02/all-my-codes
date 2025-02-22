@@ -1,0 +1,84 @@
+body{
+    min-height: 740px;
+    /* border: 5px solid black; */
+    display: flex;
+    gap: 20px;
+    /* 
+    row-gap: 20px
+    column-gap: 20px
+    */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* align-content: space-evenly; */
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color:rgb(174, 215, 251);
+    font-size: 20pt;
+}
+
+/* 
+Flexbox will commonly be referred to as "fxbx"
+In respect to fxbx, the x-axis is called "main axis" and the y-axis is called the "cross axis".
+To remember it, rememeber that Jesus was places vertically on his cross.
+Every line has its own main axis and cross axis. 
+
+To use fxbx, you need to adress the parent body first, which in this case is body{}. Apply the display:flex to it. 
+
+To position your elements along the main axis, you need the "justify-content" property. To position elements along the cross axis, you need "align-items" property. These can have the same values as justify-content.
+It has three basic values:
+1) flex-start; 
+At the start of the main axis (at the left) or at the start of the cross axis (at the top)
+2) flex-end;
+At the end of the main axis, or at the end of the cross axis (to the right and to the bottom respectively).
+3) center;
+At the center of the main axis and at the center of the cross axis.
+
+NOTE: To use fxbx on the cross axis, you need to allow for a larger fxbx layout. Do this by putting "min-height: ___px".
+
+To completely center items, you should do:
+display:flex
+justify-content: center;
+align-items: center;
+
+There are more advanced values however.
+1) space-between;
+Evenly distributes the content from left to right. The first and last elements will touch the edge of the layout. 
+2) space-around;
+Similar to space between, except the first and last elements do not touch the edge. every element gets some space to the left and right.
+3) space-evenly;
+Similar to space-around, except the space between each values is completely even.
+
+Since there is only one row of content, using these on the cross axis wouldn't make sense
+
+Flex direction property controls the direction of the main axis. 
+1) flex-direction: row;
+Default value. Makes things go from left to right.
+2) flex-direction: row-reverse;
+Makes things go from right to left. This also changes the way the justify content works. It essentially reverses it.
+3) flex-direction: column;
+Makes the main axis go from top to bottom. Also tampers with the justify content values in the same predictable way. If you use this, it now switches the justify-content and the align-items functionallity. Since the cross axis is now being controlled by justify-content because the flex-direction is column, meaning top to bottom, the align-items now controls the main axis. 
+Why would you use this? Please see "how to center items horizontally.html"
+
+More simple fxbx properties:
+1) gap: 20px;
+Gives a gap between each item in fxbx. Does not change the gap in between the first and last items and the margin.
+2) flex-wrap: wrap;
+Creates a responsive layout that will replace items in the next line if there is not enough space in the first current line.
+3) align-content: ;
+When there are multiple lines of fxbx present, you can use align-content to make it all act as one body.
+a) space-around;
+default value
+b) space-between;
+c) space-evenly;
+*can also use all the basic values as well.
+
+
+*/
