@@ -45,3 +45,9 @@
   .cool-click-box label:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
