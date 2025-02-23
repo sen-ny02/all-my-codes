@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Buttons</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            margin: 0;
+        }
+        .glowing-button {
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(34, 110, 209, 0.5);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .glowing-button:hover {
+            box-shadow: 0 0 40px rgb(30, 226, 210);
+        }
+    </style>
+</head>
+<body>
+    <button class="glowing-button">Glowing Button</button>
+</body>
+</html>
