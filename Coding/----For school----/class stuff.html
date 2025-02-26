@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer science lessons</title>
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Center the form horizontally */
+            padding:25px;
+        }
+        form {
+            background-color: rgba(187, 186, 186, 0.557);
+            border: none;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the form elements horizontally */
+            padding: 20px; /* Add some padding for better appearance */
+        }
+        label, input {
+            margin: 2px 0; /* Add some margin for spacing between elements */
+        }
+    </style>
+</head>
+<body>
+    <h1>What is Lorem Ipsum (Lipsum)?</h1>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+    <!-- add a user interface -->
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
