@@ -33,9 +33,24 @@
     input{ /* styles for all of the input functions (checkbox and radio) */
         border-radius: 10px;
         border: none;
-        transition: background-color 1s;
     }
 
+    input[type="submit"]{
+        background-color: white;
+        font-size: 20px;
+        padding: 10px 20px;
+        transition: background-color 0.5s, color 0.3s;
+    }
+
+    input[type="submit"]:hover{
+        background-color: blue;
+        color: white;
+    }
+    
+    .submit{
+        display: flex;
+        justify-content: center;
+    }
 
     img{ /* style for the image */
         display: flex;
@@ -59,7 +74,7 @@
         justify-content: space-evenly;
         align-items: center;
         width: 50vh;
-        height: 50px;
+        min-height: 50px;
         background-color: white;
         border-radius: 20px;
     }
@@ -104,6 +119,86 @@
 
 /* end of language styles */
 
+/* start of website languages part */
+
+.coding-languages{
+    width: 50vh;
+    min-height: 50px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    .html{
+        padding: 5px;
+        transition: background-color 0.5s;
+        border-radius: 10px;
+    }
+    .css{
+        padding: 5px;
+        transition: background-color 0.5s;
+        border-radius: 10px;
+    }
+    .js{
+        padding: 5px;
+        transition: background-color 0.5s;
+        border-radius: 10px;
+    }
+
+    .html:hover{
+        padding: 5px;
+        background-color: rgba(252, 70, 252, 0.48);
+    }
+    .css:hover{
+        padding: 5px;
+        background-color: rgba(252, 70, 252, 0.48);
+    }
+    .js:hover{
+        padding: 5px;
+        background-color: rgba(252, 70, 252, 0.48);
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .transport{
+        min-height: 40px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .car{
+        margin-top: 15px;
+        padding: 3px;
+        border-radius: 10px;
+        transition: background-color 0.5s, color 0.3s;
+    }
+    .bike{
+        margin-bottom: 15px;
+        padding: 3px;
+        border-radius: 10px;
+        transition: background-color 0.5s, color 0.3s;
+    }
+
+    .car:hover{
+        background-color: pink;
+        padding: 3px;
+        color: white;
+    }
+    .bike:hover{
+        background-color: pink;
+        padding: 3px;
+        color: white;
+    }
 
     </style>
 
@@ -164,33 +259,52 @@
 <p>Choose your favorite web language:</p>
 
 <div class="coding-languages">
-    <label for="HTML">
-        <input type="radio" name="web-language" id="HTML" value="HTML">
-        HTML
-    </label><br>
-    <label for="CSS">
-        <input type="radio" name="web-language" id="CSS" value="CSS">
-        CSS
-    </label><br>
-    <label for="js">
-        <input type="radio" name="web-language" id="js" value="JavaScript">
-        JavaScript
-    </label>
+    <div class="html">
+        <label for="HTML">
+            <input type="radio" name="web-language" id="HTML" value="HTML">
+            HTML
+        </label>
+    </div>
+    <br>
+    <div class="css">
+        <label for="CSS">
+            <input type="radio" name="web-language" id="CSS" value="CSS">
+            CSS
+        </label>
+    </div>
+    <br>
+    <div class="js">
+        <label for="js">
+            <input type="radio" name="web-language" id="js" value="JavaScript">
+            JavaScript
+        </label>
+    </div>
 </div>
 
 <p>Choose your favorite mode of transportation:</p>
-<div class="transport">
-    <label for="car">
-        <input type="radio" name="transport" id="car" value="Car">
-        Car
-    </label><br>
-    <label for="bike">
-        <input type="radio" name="transport" id="bike" value="Bike">
-        Bike
-    </label><br><br>
+<div class="container">
+    <div class="transport">
+        <div class="car">
+            <label for="car">
+                <input type="radio" name="transport" id="car" value="Car">
+                Car
+            </label>
+        </div>
+        <br>
+        <div class="bike">
+            <label for="bike">
+                <input type="radio" name="transport" id="bike" value="Bike">
+                Bike
+            </label>
+        </div>
+        
+    </div>
 </div>
 
-<input type="submit" value="Submit">
+<br>
+<div class="submit">
+    <input type="submit" value="Submit">
+</div>
 </form> 
 <!-- end of web languages -->
 
