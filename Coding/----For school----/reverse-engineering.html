@@ -5,48 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reverse Engineering</title>
 
+    <!-- <link rel="stylesheet" href="reverse-engineering-styles.css"> -->
+
     <style>
-        img{
-            width: 300px;
-            height: 300px;
+        body{ /* controls the style for the body */
+            background-color: rgb(212, 246, 249);
+            font-size: larger;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+
+    .first-name{ /* Slight adjustment to the pixels in the code */
+        margin-top: 30px;
+    }
+
+    .information{ /* styles for the entire information div */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(124, 244, 255, 0.35);
+        border-radius: 25px;
+    }
+
+    input{ /* styles for all of the input functions (checkbox and radio) */
+        border-radius: 10px;
+        border: none;
+        transition: background-color 1s;
+    }
+
+
+    img{ /* style for the image */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 300px;
+        height: 300px;
+        border: 5px solid #4CAF50;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+    }
+
+    /* start of language styles */
+
+
+    .languages{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50vh;
+        height: 50px;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .english{
+        display: flex;
+        justify-content: center;
+        min-width: 100px;
+        border-radius: 10px;
+        transition: background-color 0.5s ease, color 0.3s ease; 
+        /* margin-right: 10px; */
+    }
+    .english:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 68, 255);
+    }
+
+    .french{
+        display: flex;
+        justify-content: center;
+        min-width: 100px;
+        border-radius: 10px;
+        transition: background-color 0.5s ease, color 0.3s ease;
+        /* margin-right: 10px;  */
+    }
+    .french:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 0, 0);
+    }
+
+    .italian{
+        display: flex;
+        justify-content: center;
+        min-width: 100px;
+        border-radius: 10px;
+        transition: background-color 0.5s ease, color 0.3s ease; 
+        /* margin-right: 10px; */
+    }
+    .italian:hover{
+        color: rgb(255, 255, 255);
+        background-color: #008c84;
+    }
+
+/* end of language styles */
     </style>
+
+
 </head>
 <body>
     <form action="action_page/php">
-        <h1>This form is about me</h1>
+        <div class="aboutMe">
+            <h1>This form is about me</h1>
+        </div>
         <img src="https://cdn1.vectorstock.com/i/1000x1000/47/90/cartoon-programmer-writes-code-workspace-concept-vector-20874790.jpg" alt="cba to find the image so here is the alt text">
         <br><br>
+
+<!-- information -->
         <h3>Here is my information</h3>
-        <label for="fName">First Name: </label><br>
-        <input type="text" name="fName" id="fName"><br>
-        <label for="lName">Last Name: </label><br>
-        <input type="text" name="lName" id="lName"><br><br>
+        <div class="information">
+            <div class="first-name">
+                <label for="fName">First Name: </label><br>
+            </div>
+            <input type="text" name="fName" id="fName"><br>
+            <div class="last-name">
+                <label for="lName">Last Name: </label><br>
+            </div>
+            <input type="text" name="lName" id="lName"><br><br>
+        </div>
+<!-- end of information -->
+
+
+<!-- start of languages -->
         <p>I speak some of the following languages:</p>
-        <input type="checkbox" name="English" id="English">
-        <label for="english">English</label><br>
-        <input type="checkbox" name="french" id="french">
-        <label for="French">French</label><br>
-        <input type="checkbox" name="Italian" id="Italian">
-        <label for="italian">Italian</label>
+        
+        <div class="languages">
+            <div class="english">
+                <label for="English">
+                    <input type="checkbox" name="English" id="English">
+                    English
+                </label><br>
+            </div>
+        
+            <div class="french">
+                <label for="french">
+                    <input type="checkbox" name="french" id="french">
+                    French
+                </label><br>
+            </div>
+        
+            <div class="italian">
+                <label for="Italian">
+                    <input type="checkbox" name="Italian" id="Italian">
+                    Italian
+                </label>
+            </div>
+        </div>
+<!-- end of languages -->
 
-        <p>Choose your favorite web language:</p>
-        <input type="radio" name="HTML" id="HTML">
-        <label for="HTML">HTML</label><br>
-        <input type="radio" name="CSS" id="CSS">
-        <label for="CSS">CSS</label><br>
-        <input type="radio" name="js" id="js">
-        <label for="js">JavaScript</label>
+<!-- start of web languages -->
 
-        <p>Choose your favorite mode of transportation:</p>
-        <input type="radio" name="car" id="car">
-        <label for="car">Car</label><br>
-        <input type="radio" name="bike" id="bike">
-        <label for="bike">Bike</label><br><br>
+<p>Choose your favorite web language:</p>
 
-        <input type="submit" value="Submit">
-    </form> 
+<div class="coding-languages">
+    <label for="HTML">
+        <input type="radio" name="web-language" id="HTML" value="HTML">
+        HTML
+    </label><br>
+    <label for="CSS">
+        <input type="radio" name="web-language" id="CSS" value="CSS">
+        CSS
+    </label><br>
+    <label for="js">
+        <input type="radio" name="web-language" id="js" value="JavaScript">
+        JavaScript
+    </label>
+</div>
 
+<p>Choose your favorite mode of transportation:</p>
+<div class="transport">
+    <label for="car">
+        <input type="radio" name="transport" id="car" value="Car">
+        Car
+    </label><br>
+    <label for="bike">
+        <input type="radio" name="transport" id="bike" value="Bike">
+        Bike
+    </label><br><br>
+</div>
+
+<input type="submit" value="Submit">
+</form> 
+<!-- end of web languages -->
 
 </body>
 </html>
