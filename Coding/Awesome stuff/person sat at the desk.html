@@ -42,12 +42,17 @@
         background-color: white;
         font-size: 20px;
         padding: 10px 20px;
-        transition: background-color 0.5s, color 0.3s;
+        transition: background-color 0.5s, color 0.3s, transform 0.2s;
     }
 
     input[type="submit"]:hover{
         background-color: blue;
         color: white;
+        transform: translateY(-10px)
+    }
+
+    input[type="submit"]:active{
+        transform: translateY(3px)
     }
     
     .submit{
