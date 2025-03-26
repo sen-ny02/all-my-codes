@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            min-width: 100vw;
+            min-height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+        }
+        .around-header{
+            margin-top: 40px;
+            min-width: 100vw;
+            max-height: 30vh;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+        }
+        .header{
+            display:flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color:#c92124;
+            /* #c81e23 */
+            max-width: 98vw;
+            max-height: 30vh;
+            border-radius: 50px;
+        }
+        .header-text{
+            padding: 20px;
+            color: white;
+        }
+        @keyframes spin{
+            0%{
+                transform: rotate(0)
+            }
+            50%{
+                transform:rotate(180)
+            }
+            100%{
+                transform:rotate(360)
+            }
+        }
+        .pizza{
+            animation-name: spin;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="around-header">
+        <div class="header">
+            <p class = "header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore odio eos quis facere doloribus? Eius in architecto atque accusantium laudantium, quaerat aliquam perferendis, soluta repudiandae ea nihil consequatur voluptate.</p>
+            <div class="pizza">
+                <img src="pizza.png" style="max-height: 30vh; border-radius: 30px;">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
