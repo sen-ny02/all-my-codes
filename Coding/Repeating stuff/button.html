@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F0F0F0;
+        } 
+
+        button{
+            background-color: #3794b2;
+            border: none;
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 19px;
+            color: white;
+            transition: background-color 0.4s, color 0.2s, transform 0.2s;
+        }
+
+        button:hover{
+            background-color: white;
+            color: #3794b2;
+            transform: translateY(-5px);
+        }
+
+        button:active{
+            background-color: #256276;
+            color: white;
+            animation-name: expand-and-shake;
+            
+
+        }
+
+        @keyframes expand-and-shake {
+            0% {
+            transform: scale(1) translateX(0);
+            }
+            25% {
+            transform: scale(1.1) translateX(-5px);
+            }
+            50% {
+            transform: scale(1) translateX(5px);
+            }
+            75% {
+            transform: scale(1.1) translateX(-5px);
+            }
+            100% {
+            transform: scale(1) translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>Press this button</button>
+</body>
+</html>
