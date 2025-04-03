@@ -71,6 +71,7 @@ p,h1,h2,h3,h4,h5,h6{
 .sign-in-button:hover{
     color: white;
     background-color: rgba(68, 115, 234, 0.533);
+    cursor: pointer;
 }
 
 .border-for-footer{
