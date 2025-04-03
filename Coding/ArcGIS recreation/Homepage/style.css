@@ -5,7 +5,7 @@ html, body{
 }
 
 body{
-    min-height: 110vh;
+    min-height: 100vh;
     background-image: url("modern.jpg");
     display: flex;
     justify-content: center;
@@ -151,4 +151,30 @@ p,h1,h2,h3,h4,h5,h6{
     border-radius: 10px;
     color: white;
     text-decoration: none;
+}
+
+.bottom-part-total-skeleton{
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 100vw;
+    background-color: white;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+.privacy, .trust-center, .legal, .contact{
+    padding: 15px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.572);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 0.3s, color 0.1s;
+}
+
+.privacy:hover, .trust-center:hover, .legal:hover, .contact:hover{
+    background-color: rgba(68, 115, 234, 0.533);
+    color: white;
 }
