@@ -25,6 +25,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 .logo{
+    margin-top: 30px;
     display: flex;
     max-width: 100vw;
     justify-content: center;
@@ -44,4 +45,30 @@ p,h1,h2,h3,h4,h5,h6{
 .main-para-cont{
     max-width: 800px;
     text-align: center;
+}
+
+.sign-in-button{
+    margin-top: 50px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 17px;
+}
+
+.border-for-footer{
+    margin-top: 200px;
+    opacity: 0.5;
+}
+
+.border-cont{
+    margin-top: 40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    margin-top: 30px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
 }
