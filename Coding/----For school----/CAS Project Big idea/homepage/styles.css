@@ -1,0 +1,44 @@
+body{
+    background-image: url(modern.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.align-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.header{
+    /* border: 5px solid blue; */
+    text-align: center;
+    max-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 220px;
+}
+
+.main-paragraph{
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    /* background */
+    background-image: url(darker\ modern.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
