@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Border</title>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .animated-border {
+            font-size: 24px;
+            font-weight: 400;
+            color: #333;
+            padding: 10px 20px;
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Animated border effect */
+        .animated-border::before,
+        .animated-border::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #0066cc;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .animated-border::before {
+            top: 0;
+            left: 0;
+        }
+
+        .animated-border::after {
+            bottom: 0;
+            right: 0;
+        }
+
+        .animated-border:hover::before,
+        .animated-border:hover::after {
+            width: 100%; /* Expand the border on hover */
+        }
+
+        .animated-border:hover {
+            color: #0066cc; /* Optional: Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="animated-border">Hover over me</a>
+</body>
+</html>
