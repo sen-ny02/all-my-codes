@@ -109,6 +109,7 @@ body {
 }
 
 .opening-para{
+    border-radius: 10px;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
