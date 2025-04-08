@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}©
+}
 
 .Frank-Sinatra:link,
 .Frank-Sinatra:visited,
@@ -89,8 +89,8 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #0066cc, #00ccff);
     transition: width 0.3s ease-in-out;
+    background: linear-gradient(90deg, #0066cc, #00ccff);
 }
 
 .nicknames::before {
@@ -106,4 +106,41 @@ body {
 .nicknames:hover::before,
 .nicknames:hover::after {
     width: 100%;
+}
+
+.opening-para{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    padding: 10px 20px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.opening-para::before,
+.opening-para::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+    background: linear-gradient(90deg, #0066cc, #00ccff);
+}
+
+.opening-para::before{
+    top: 0;
+    left: 0;
+}
+
+.opening-para::after{
+    bottom: 0;
+    right: 0;
+}
+
+.opening-para:hover::before,
+.opening-para:hover::after{
+    height: 100%;
 }
