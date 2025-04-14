@@ -101,7 +101,8 @@ body {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping if needed */
     gap: 20px;
-    /* border: 2px solid blue; */
+    outline: 2px solid #333;
+    border-radius: 25px;
     text-align: center;
     display: inline;
     margin-bottom: 20px;
@@ -112,7 +113,11 @@ body {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    transition: outline 0.3s ease 0.7s;
+}
+
+.nicknames:hover{
+    outline: none;
 }
 
 .nicknames::before,
@@ -121,7 +126,7 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out 0.4s;
     background: linear-gradient(90deg, #0066cc, #00ccff);
 }
 
@@ -188,15 +193,21 @@ body {
 }
 
 .row-one {
-    outline: solid 2px #333;
-    outline-offset: 3;
-    background-color: #95eaff;
+    border-radius: 40px;
+    background-color: #95eaff76;
     width: 90vw;
     height: 350px;
     /* border: 2px solid blue; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    transition: outline 0.2s, background-color 0.2s;
+}
+
+.row-one:hover{
+    outline: solid 2px #333;
+    outline-offset: 3;
+    background-color: #95eaff;
 }
 
 .young-frank-img {
