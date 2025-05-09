@@ -12,7 +12,7 @@ class bankAccount:
     def withdrawMoney(self, moneyInput):
         if moneyInput > self.balance:
             print(f"Sorry, the amount entered [£{moneyInput}] is higher than your current balance [£{self.balance}]"
-                  "\nYour balance has not been altered.")
+                "\nYour balance has not been altered.")
         else:
             self.balance -= moneyInput
         return (f"£{self.balance}")
