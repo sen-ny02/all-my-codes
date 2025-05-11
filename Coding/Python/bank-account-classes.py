@@ -18,7 +18,7 @@ class bankAccount:
         return (f"£{self.balance}")
 
     def showBalance(self):
-        print(f"Your current balance is: {self.balance}")
+        print(f"Your current balance is: £{self.balance}")
 
 print("------------------------------------------------")
 print("Before widthrawl:")
